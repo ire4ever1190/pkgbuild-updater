@@ -18,4 +18,8 @@ git push
 
 #### Installation
 
-Currently I haven't made a PKGBUILD for this (ironic) so just download the script and put it where you want
+Install the [pkgbuild-updater](https://aur.archlinux.org/packages/pkgbuild-updater) package from the AUR.
+
+If installing manually for some reason, this requires
+- `jq`
+- `pacman-contrib`
