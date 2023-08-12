@@ -1,5 +1,5 @@
 #!/bin/sh
-
+set -e
 BUILD_FILE=./PKGBUILD
 # Load variables from the PKGBUILD
 source "$BUILD_FILE"
