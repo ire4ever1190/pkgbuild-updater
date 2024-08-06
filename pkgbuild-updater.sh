@@ -46,6 +46,8 @@ echo "New version: $pkgver-$pkgrel"
 sed -i "s/^pkgrel=.*/pkgrel=$pkgrel/" $BUILD_FILE
 # Rebuild .SRCINFO again incase the pkgrel number changed
 makepkg --printsrcinfo > .SRCINFO
+# Build the package to check it works
+makepkg
 
 # And commit the changes (Should I ask the user if the changes are a-ok?)
 git commit .SRCINFO $BUILD_FILE -m "Bump to $pkgver-$pkgrel"
